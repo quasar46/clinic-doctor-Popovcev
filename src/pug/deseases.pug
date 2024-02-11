@@ -1,0 +1,113 @@
+extends templates/layout
+
+block main 
+    main
+        //- variables
+        - var mainBlockTitle = 'Варикозная болезнь вен нижних конечностей'
+        - var mainBlockSubtitle = 'Патология клапанов и появление обратного движения крови по подкожным венам ног'
+
+        .breadcrumbs._container 
+            a.breadcrumbs__link(href="") Главная
+            a.breadcrumbs__link.active Варикозная болезнь вен
+        section.main-block
+            ._container
+                ._container-inner 
+                    .col-left 
+                    .col-right
+                        h1 #{mainBlockTitle}
+                        .main-block__content.main-block__content--wide
+                            h3.main-block__title-second #{mainBlockSubtitle}
+                            button.btn.btn--black.main-block__btn Записаться на консультацию
+
+        figure.picture._container
+            img(src="img/pic8.png" alt="")
+
+        section.information 
+            ._container 
+                ._container-inner 
+                    .col-left 
+                        h2.title-grey Анатомия
+                    .col-right 
+                        .information__wrapper 
+                            h3.information__title Венозная система нижних конечностей состоит из глубоких и подкожных вен
+                            .information__inner 
+                                img(src="img/pic9.png" alt="")
+                                .information__content 
+                                    .information__block
+                                        .information__circle 90%
+                                        p крови двигается по глубоким венам
+                                    .information__block
+                                        .information__circle 10%
+                                        p крови двигается по подкожным (поверхностным) венам
+
+
+        section.information-2
+            ._container 
+                ._container-inner 
+                    .col-left 
+                        h2.title-grey Физиология
+                    .col-right 
+                        .information-2__wrapper 
+                            h3.information__title Кровь по венам должна двигаться к сердцу
+                            .information-2__inner 
+                                .information-2__block
+                                    img(src="img/pic10.png" alt="")
+                                    .information-2__content
+                                        h4.information-2__content-title Здоровая вена
+                                        p Вены содержат клапаны, которые направляют движение крови только в одну сторону (к сердцу). 
+                                        p Кровь по венам ног в положении стоя двигается всегда только вверх, против силы тяжести.
+                                .information-2__block
+                                    img(src="img/pic11.png" alt="")
+                                    .information-2__content
+                                        h4.information-2__content-title Вена поражена варикозом
+                                        p Движение крови в обе стороны.
+                                        .information-2__box 
+                                            h4.information-2__box-title Рефлюкс
+                                            p обратное движение крови, при <br> нарушении работы клапанов.
+
+        include modules/directions-2
+        include modules/slider6
+        //- p Возможные ощущения в нижних конечностях: 
+        //-     ul 
+        //-         li тупая ноющая боль;
+        //-         li тяжесть;
+        //-         li ощущения «распирания»;
+        //-     ul 
+        //-         li повышенная утомляемость;
+        //-         li ночные судороги.
+        include modules/author-2
+        section.grid-blocks.warning
+            ._container
+                ._container-inner
+                    .col-left 
+                        h2.title.title-grey Опастность
+                    .col-right
+                        h3.warning__title Варикозная болезнь вен нижних конечностей — это постоянно прогрессирующее состояние
+                        .grid-blocks__wrapper
+                            .grid-blocks__col
+                                h4.grid-blocks__title Эстетический дефект
+                                p Вздутые вены вызывают стеснение своего тела и развивают комплексы.
+                            .grid-blocks__col
+                                h4.grid-blocks__title Риск появления тромбоза
+                                p Увеличение риска появления воспаления (сгустка крови) внутри варикозной вены.
+                            .grid-blocks__col
+                                h4.grid-blocks__title Трофические изменения мягких тканей
+                                p Наличие риска развития трофических изменений кожи и мягких тканей.
+        section
+            ._container
+                .acc__wrapper._container-inner 
+                    .col-left 
+                        h2.title-grey Методики<br> лечения
+                    .col-right
+                        h3.accordion__title-2 Основная задача лечения — прекращение обратного движения крови (рефлюкса) по венам
+                        .accordion__text.accordion__text--wide
+                            p На данный момент нет методик восстановления клапанного аппарата подкожных вен.
+                            p Единственным эффективным способом лечения варикозной болезни вен нижних конечностей является удаление неработающей вены.
+                        include modules/accordion-4
+
+        include modules/slider
+        include modules/feedback
+        include modules/slider7
+        include modules/slider2
+        include modules/author
+        include modules/feedback2

@@ -1,0 +1,90 @@
+// h1 {
+//   &.main-title {
+//     font-size: 60px;
+//     font-weight: 700;
+//     margin-bottom: 100px;
+//     @media (max-width: 767px) {
+//       font-size: 32px;
+//       margin-bottom: 60px;
+//     }
+//   }
+// }
+
+// h2 {
+//   font-size: 60px;
+//   font-weight: 700;
+//   @media (max-width: 767px) {
+//     font-size: 32px;
+//   }
+// }
+
+// h3 {
+//   font-size: 38px;
+//   font-weight: 600;
+//   @media (max-width: 767px) {
+//     // font-size: 24px;
+//     font-size: 18px;
+//   }
+// }
+
+// h4 {
+//   font-size: 24px;
+//   font-weight: 600;
+// }
+
+// .title-404 {
+//   font-size: 60px;
+//   font-weight: 700;
+//   margin-bottom: 40px;
+//   @media (max-width: 767px) {
+//     font-size: 32px;
+//     margin-bottom: 20px;
+//   }
+// }
+
+// .title {
+//   line-height: 0.9;
+//   span {
+//     display: block;
+//   }
+
+//   &--left {
+//     display: flex;
+//     flex-direction: column;
+//     span {
+//       &:first-child {
+//         margin-left: -300px;
+//         @media (max-width: 1160px) {
+//           margin-left: -236px;
+//         }
+//         @media (max-width: 999px) {
+//           margin-left: 0;
+//         }
+//       }
+//     }
+//     @media (max-width: 767px) {
+//       display: block;
+//       font-size: 32px;
+//     }
+//   }
+//   // внутренние заголовки h2 кроме основного
+//   &--inner {
+//     margin-bottom: 40px;
+//     @media (max-width: 767px) {
+//       margin-bottom: 30px;
+//     }
+//   }
+//   @media (max-width: 767px) {
+//     font-size: 24px;
+//   }
+//   &--italic {
+//     font-style: italic;
+//     text-transform: uppercase;
+//     @media (max-width: 767px) {
+//       font-size: 32px;
+//     }
+//   }
+// }
+
+// .main-title {
+// }

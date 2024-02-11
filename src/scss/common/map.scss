@@ -1,0 +1,20 @@
+#map {
+  height: 445px;
+  border-radius: 20px;
+  overflow: hidden;
+  //   -webkit-filter: grayscale(100%);
+  @media (max-width: 999px) {
+    height: 420px;
+  }
+  @media (max-width: 767px) {
+	height: 200px;
+  }
+}
+
+.map__title {
+  margin-bottom: 49px; 
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}

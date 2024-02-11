@@ -1,0 +1,71 @@
+extends templates/layout
+
+block main
+	main.contacts
+		.breadcrumbs._container 
+			a.breadcrumbs__link(href="") Главная
+			a.breadcrumbs__link.active Контакты
+		section.mt0
+			._container
+				._container-2
+					.contacts__head
+						h1 Контакты
+						.social 
+							a.social__link(href="")
+								img(src="img/VKcom.png" alt="")
+							a.social__link(href="")
+								img(src="img/YouTube.png" alt="")
+							a.social__link(href="")
+								img(src="img/Instagram.png" alt="")
+							a.social__link(href="")
+								img(src="img/WhatsApp.png" alt="")
+
+					.about-block__content 
+						.about-block__col 
+							h4.about-block__title Режим работы:
+							.about-block__text 	
+								p Ежедневно с 9 до 21.
+								p Прием и консультация только по предварительной записи.
+						.about-block__col 
+							h4.about-block__title Адрес:
+							.about-block__text 
+								p Москва, <br> Краснопролетарская 8, с1
+						.about-block__col 
+							h4.about-block__title Телефоны:
+							.about-block__text 
+								p Телефон для записи <br>+7 (495) 008 48 83
+								p Личный номер доктора <br>+7 (926) 197 36 43 
+					.tab#tab-1 
+						h3.map__title До нас легко добраться
+						.tab-nav 
+							button.tab-btn.tab-btn-active(data-target-id="0") Карта
+							button.tab-btn(data-target-id="1") Фото клиники
+							button.tab-btn(data-target-id="2") Видео-прогулка от метро
+						.tab-content 
+							.tab-pane.tab-pane-show(data-id="0")
+								#map
+							.tab-pane(data-id="1")
+								.swiper.slider-result#slider-result-4.-margin
+									.swiper-wrapper 
+										.swiper-slide 
+											img(src="img/pic5.png" alt="")
+										.swiper-slide 
+											img(src="img/pic5.png" alt="")
+										.swiper-slide 
+											img(src="img/pic5.png" alt="")
+									.swiper-footer._container
+										.swiper-navigation
+											.swiper-button-prev
+												svg(width="80" height="80")
+													use(href="#icn-arrow-prev")
+											.swiper-button-next
+												svg(width="80" height="80")
+													use(href="#icn-arrow-next")
+										.swiper-pagination
+							.tab-pane(data-id="2")
+
+
+
+
+
+		include modules/feedback					

@@ -1,0 +1,20 @@
+section.feedback
+	._container
+		.feedback__wrap._container-inner 
+			.col-left 
+			.col-right
+				h2.--left.--italic
+					span #{feedback1Title1} 
+					span #{feedback1Title2}
+				.feedback__inner 
+					.feedback__text !{feedback1Text}
+					form.form.feedback__form(action="sendmail.php") 
+						.form__items
+							.form__item 
+								input.form__input.form__name(type="text" placeholder="Ваше имя" name="name" required)
+							.form__item
+								input.form__input.form__tel(type="tel" placeholder="Ваш номер телефона" name="tel" required)
+							span.input-error
+						.form__agr Нажимая кнопку «Записаться на консультацию», вы соглашаетесь с 
+							a(href="") Политикой конфиденциальности и правилами обработки персональных данных
+						button(type="submit").btn.btn--black.feedback__btn #{feedback1Btn}

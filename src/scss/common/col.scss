@@ -1,0 +1,21 @@
+.col-left {
+  padding-right: 30px;
+}
+
+.col-right {
+  width: 100%;
+  min-width: 0;
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.col-right__head {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,353 @@
+.slider-result {
+  .swiper-slide {
+    width: 860px;
+    @media (max-width: 1160px) {
+      width: 700px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1921px) {
+    margin-right: -500px;
+  }
+}
+
+#slider-result-4 {
+  .swiper-slide {
+    width: 860px;
+    @media (max-width: 1160px) {
+      width: 700px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-navigation {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  & > * {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    border-radius: 50%;
+    &::after {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      width: 40px;
+      height: 40px;
+    }
+    &:active {
+      background-color: rgba(43,43,43,.05);
+    }
+  }
+  @media (max-width: 767px) {
+    gap: 30px;
+  }
+}
+
+.swiper-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  &._container {
+    margin-left: 0;
+    padding: 0;
+    max-width: 860px;
+    @media (max-width: 1160px) {
+      max-width: 700px;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+
+.slider-result {
+  .swiper-pagination {
+    position: static;
+    min-width: 82px;
+    width: auto;
+    height: 36px;
+    border: 1px solid #333;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    @media (max-width: 767px) {
+      min-width: 70px;
+    }
+  }
+  .swiper-pagination-current {
+    font-size: 20px;
+    font-weight: 600;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+  .swiper-pagination-total {
+    font-size: 20px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.slider-companies {
+  .swiper-scrollbar {
+    position: static;
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+    background-color: #ddd;
+    height: 1px;
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
+  .swiper-scrollbar-drag {
+    background-color: #4f4f4f;
+    height: 2px;
+  }
+}
+
+#slider-signs {
+  .swiper-slide {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .swiper-scrollbar {
+    position: static;
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+    background-color: #ddd;
+    height: 1px;
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
+  .swiper-scrollbar-drag {
+    background-color: #4f4f4f;
+    height: 2px;
+  }
+  .swiper-pagination {
+    position: static;
+    min-width: 82px;
+    width: auto;
+    height: 36px;
+    border: 1px solid #333;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    @media (max-width: 767px) {
+      min-width: 70px;
+    }
+  }
+  .swiper-pagination-current {
+    font-size: 20px;
+    font-weight: 600;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+  .swiper-pagination-total {
+    font-size: 20px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.slider-sertificat {
+  .swiper-slide {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .swiper-scrollbar {
+    position: static;
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+    background-color: #ddd;
+    height: 1px;
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
+  .swiper-scrollbar-drag {
+    background-color: #4f4f4f;
+    height: 2px;
+  }
+}
+
+.slider-resume {
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    width: 410px;
+    border-radius: 30px;
+    border: 1px solid #4f4f4f;
+    background: #fff;
+    padding: 20px 30px;
+    height: auto;
+    @media (max-width: 767px) {
+      width: 300px;
+    }
+  }
+  .swiper-scrollbar {
+    position: static;
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+    background-color: #ddd;
+    height: 1px;
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
+  .swiper-scrollbar-drag {
+    background-color: #4f4f4f;
+    height: 2px;
+  }
+}
+
+.slider-resume__title {
+  font-size: 60px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 13px;
+  word-wrap: anywhere;
+}
+
+.slider-pic {
+  .swiper-footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 40px;
+    @media (max-width: 999px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 10px;
+    }
+  }
+  .swiper-navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .swiper-pagination {
+    right: 40px;
+    top: 40px;
+    left: auto;
+    bottom: auto;
+    text-align: right;
+    min-width: 82px;
+    width: auto;
+    height: 36px;
+    border: 1px solid #333;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    @media (max-width: 999px) {
+      padding: 0 20px;
+      top: 20px;
+      right: 20px;
+      @media (max-width: 767px) {
+        top: 10px;
+        right: 10px;
+      }
+    }
+    @media (max-width: 767px) {
+      min-width: 70px;
+    }
+  }
+  .swiper-pagination-current {
+    font-size: 20px;
+    font-weight: 600;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+  .swiper-pagination-total {
+    font-size: 20px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+}
+
+#slider-steps {
+  .swiper-slide {
+    img {
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .swiper-pagination {
+    @media (max-width: 767px) {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      bottom: auto;
+      left: auto;
+    }
+  }
+}
+
+.slider__head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 77px;
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+}
+
+.slider__office {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  @media (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+}
+
+#slider-video {
+  .swiper-slide {
+    object {
+      width: 100%;
+      height: 400px;
+      @media (max-width: 767px) {
+        height: 200px;
+      }
+    }
+  }
+}

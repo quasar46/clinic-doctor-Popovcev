@@ -1,0 +1,32 @@
+extends templates/layout
+
+block main 
+    main
+        //- variables
+        //- - var mainBlockTitle = 'Лечение варикоза'
+        - var mainBlockSubtitle = 'Клиника флебологии доктора Поповцева'
+        - var mainBlockText = 'Использую все современные малоинвазивные методы лечения варикозной болезни: различиные виды склеротерапии, эндовазальную лазерную коагуляцию (ЭВЛК), радиочастотную абляцию (РЧА), минифлебэктомию.'
+
+        section.main-block.main-block--width
+            ._container
+                ._container-inner 
+                    .col-left 
+                    .col-right
+                        h1.main-block__title.main-block__title--index Лечение <br> варикоза
+                        .main-block__content
+                            h3.main-block__sub-title #{mainBlockSubtitle}
+                            .main-block__text
+                                p #{mainBlockText}
+                            button.btn.btn--black.main-block__btn Записаться на консультацию
+        .picture._container
+            img(src="img/pic18.png" alt="")
+        include modules/grid-blocks
+        include modules/accordion
+        include modules/author
+        include modules/slider
+        include modules/feedback
+        include modules/slider
+        include modules/slider7
+        include modules/accordion2
+        include modules/about-block
+        include modules/feedback2

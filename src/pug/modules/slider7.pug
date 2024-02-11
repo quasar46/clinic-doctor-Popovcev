@@ -1,0 +1,60 @@
+section.slider 
+	._container 
+		//- .slider__wrap._container-inner 
+		//- 	.col-left
+		//- 		h2.title-grey Отзывы
+					
+		._container-inner-2
+			.col-left 
+				h2.title-grey.title-grey--mode Отзывы
+			.col-right 
+				.tab#tab-1 
+					.tab-nav 
+						//- button.tab-btn.tab-btn-active(data-target-id="0") Все
+						button.tab-btn.tab-btn-active(data-target-id="0") Текст
+						button.tab-btn(data-target-id="1") Видео
+					.tab-content 
+						//- .tab-pane.tab-pane-show(data-id="0")
+						//- 	.swiper.slider-result#slider-result-1.-margin
+						//- 		.swiper-wrapper 
+						//- 			.swiper-slide 
+						//- 				img(src="img/pic1.png" alt="")
+						//- 			.swiper-slide 
+						//- 				img(src="img/pic1.png" alt="")
+						//- 			.swiper-slide 
+						//- 				img(src="img/pic1.png" alt="")
+						//- 		.swiper-footer._container
+						//- 			.swiper-navigation
+						//- 				.swiper-button-prev
+						//- 					svg(width="80" height="80")
+						//- 						use(href="#icn-arrow-prev")
+						//- 				.swiper-button-next
+						//- 					svg(width="80" height="80")
+						//- 						use(href="#icn-arrow-next")
+						//- 			.swiper-pagination
+						.tab-pane.tab-pane-show(data-id="0")
+							.reviews-carousel
+								<review-lab data-widgetid="65b90f8e590c3486c02ae429"></review-lab>
+								<script src="https://app.reviewlab.ru/widget/index-es2015.js" defer></script>
+						.tab-pane(data-id="1")
+							.swiper.slider-result#slider-video.-margin
+								.swiper-wrapper 
+									.swiper-slide 
+										<object data="https://www.youtube.com/embed/20Ap1kH8wuU?si=yM0fOqlTF6hl0-e9"></object>
+									.swiper-slide 
+										<object data="https://www.youtube.com/embed/20Ap1kH8wuU?si=yM0fOqlTF6hl0-e9"></object>
+									.swiper-slide 
+										<object data="https://www.youtube.com/embed/20Ap1kH8wuU?si=yM0fOqlTF6hl0-e9"></object>
+								.swiper-footer._container
+									.swiper-navigation
+										.swiper-button-prev
+											svg(width="80" height="80")
+												use(href="#icn-arrow-prev")
+										.swiper-button-next
+											svg(width="80" height="80")
+												use(href="#icn-arrow-next")
+									.swiper-pagination
+
+
+
+

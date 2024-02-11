@@ -1,0 +1,14 @@
+extends templates/layout
+
+block main 
+	main.reviews
+		.breadcrumbs._container 
+			a.breadcrumbs__link(href="") Главная
+			a.breadcrumbs__link.active Отзывы
+		._container
+			h1.main-block__title Отзывы
+			h3.reviews__subtitle Что говорят реальные пациенты?
+			<review-lab data-widgetid="65b90f8e590c3486c02ae429"></review-lab>
+			<script src="https://app.reviewlab.ru/widget/index-es2015.js" defer></script>
+
+		include modules/feedback2

@@ -1,0 +1,74 @@
+// .widget__src.widget__src--desktop.widget__src--desktop-column.widget__src--logo {
+//   display: none;
+// }
+
+.reviews__subtitle {
+  margin-bottom: 100px;
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+review-lab .widget__footer {
+  display: none !important;
+}
+
+review-lab .ngucarousel {
+  padding: 0 !important;
+}
+
+review-lab .widget, review-lab .widget__header {
+  margin: 0 !important;
+}
+
+// .reviews-carousel {
+//   // пагинация виджета
+//   review-lab .widget__points {
+//     display: none;
+//   }
+//   review-lab .ngucarousel {
+//     padding: 0;
+//   }
+//   review-lab .widget {
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   review-lab .widget__header {
+//     display: none;
+//   }
+//   review-lab .widget__pag_prev-bottom {
+//     background-image: url("../img/arrow-prev.svg");
+//     width: 80px;
+//     height: 80px;
+//     left: 0;
+//     svg {
+//       display: none;
+//     }
+//   }
+//   review-lab .widget__pag_next-bottom {
+//     background-image: url("../img/arrow-next.svg");
+//     width: 80px;
+//     height: 80px;
+//     left: 120px;
+//     svg {
+//       display: none;
+//     }
+//     @media (max-width: 767px) {
+//       left: 70px;
+//     }
+//   }
+//   review-lab .widget__pag {
+//     box-shadow: none;
+//   }
+//   review-lab .widget__pag {
+//     @media (max-width: 1024px) {
+//       display: block;
+//     }
+//     @media (max-width: 767px) {
+//       width: 40px;
+//       height: 40px;
+//       background-size: cover;
+//     }
+//   }
+// }

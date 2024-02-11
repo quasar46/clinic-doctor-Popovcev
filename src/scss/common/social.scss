@@ -1,0 +1,18 @@
+.social {
+  align-items: center;
+  gap: 18px;
+  display: flex;
+  &--footer {
+    display: flex;
+    margin-top: auto;
+  }
+}
+
+.menu {
+  .social {
+    display: none;
+    @media (max-width: 1160px) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.feedback {
+  padding: 90px 0;
+  background-color: #f9f9f9;
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+}
+
+.feedback__inner {
+  position: relative;
+  max-width: 558px;
+  width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icn-arrow-feedback.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: calc(100% + 40px);
+  }
+  @media (max-width: 999px) {
+    max-width: 100%;
+  }
+}
+
+.feedback__text {
+  margin-bottom: 60px;
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+}
+
+.feedback__btn {
+  width: 100%;
+}
+
+.feedback__inner-title {
+  margin-bottom: 25px;
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}

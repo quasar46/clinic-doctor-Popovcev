@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+  include ../modules/variables
+  include ../modules/head
+  body
+    .wrapper
+      //- variables
+      - var feedback1Title1 = 'Запишитесь'
+      - var feedback1Title2 = 'на консультацию'
+      - var feedback1Text = '<p> После часовой консультации у вас не останется вопросов касательно флебологических проблем.</p> <p> Доктор побеседует с вами, произведет осмотр и сделает УЗИ вен, после чего поставит  диагноз.</p> <p> Стоимость консультации с УЗИ вен — 3000 ₽ </p>'
+      - var feedback1Btn = 'Записаться на консультацию'
+
+      - var feedback2Title1 = 'Сомневаетесь'
+      - var feedback2Title2 = 'в необходимости операции?'
+      - var feedback2Subtitle = 'Получите«Второе мнение» бесплатно, если:'
+      - var feedback2Text = '<p>Вы уже были на консультации у другого специалиста;</p><p>Вам недавно делали УЗИ вен;</p><p>Был поставлен диагноз «Варикозная болезнь вен ног»;</p><p>Вам было предложено хирургическое лечение.</p>'
+      - var feedback2Btn = 'Получить второе мнение'
+      include ../modules/header
+      block main
+      include ../modules/footer
+      include ../modules/vectors
+      include ../modules/script

@@ -1,0 +1,33 @@
+.language {
+  min-height: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-inline: 20px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  background-color: transparent;
+  background-image: url("../img/arrow.svg");
+  background-size: 10px auto;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 98px;
+  outline: none;
+  cursor: pointer;
+
+  @media (max-width: 1160px) {
+    margin-left: auto;
+  }
+}
+
+.lang-menu {
+  display: none;
+  @media (max-width: 1160px) {
+    display: block;
+    width: 100%;
+  }
+}

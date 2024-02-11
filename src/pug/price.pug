@@ -1,0 +1,27 @@
+extends templates/layout
+
+block main 
+    main
+        .breadcrumbs._container 
+            a.breadcrumbs__link(href="") Главная
+            a.breadcrumbs__link.active Цены
+
+        section.price._container
+            ._container-2
+                h1.main-block__title.main-block__title--price Цены
+                .price__main 
+                    .price__head
+                        h3.price__main-title Налоговый вычет
+                        h4.price__main-title-2 Верните часть потраченных <br> на лечение в нашей<br> клинике средств
+                    .price__content 
+                        h5.price__content-title Оформите вычет, если вы <br> расходовали средства:
+                        .price__content-inner
+                            ul.price__list
+                                li.price__list-item на себя;
+                                li.price__list-item на родителей;
+                                li.price__list-item на детей (подопечных), в возрасте до 18 лет, а при обучении детей (подопечных) по очной форме — до 24 лет;
+                                li.price__list-item на супруга (супругу).
+                            .price__bottom На налоговый вычет могут претендовать граждане, являющиеся налоговыми резидентами РФ.
+                        
+        include modules/accordion-5
+        include modules/feedback

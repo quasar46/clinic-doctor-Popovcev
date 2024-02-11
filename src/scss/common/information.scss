@@ -1,0 +1,129 @@
+.information__title {
+  margin-bottom: 55px;
+}
+
+.information__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  @media (max-width: 767px) {
+    grid-template-columns: 260px 1fr;
+  }
+  @media (max-width: 639px) {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 320px;
+      margin: auto;
+    }
+  }
+}
+
+.information__content {
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.information__circle {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.information__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  p {
+    text-align: center;
+  }
+}
+
+.information-2__box {
+  padding: 24px;
+  padding: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+
+.information-2__box-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.information-2__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  @media (max-width: 1160px) {
+    max-width: 430px;
+  }
+  @media (max-width: 639px) {
+    max-width: 100%;
+  }
+}
+
+.information-2__content-title {
+  margin-bottom: 20px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.information-2__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.information-2__block {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 20px;
+  &:first-child {
+    .information-2__content {
+      margin-top: 50px;
+      @media (max-width: 767px) {
+        margin-top: 40px;
+      }
+      @media (max-width: 639px) {
+        margin-top: 0;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 150px 1fr;
+  }
+  @media (max-width: 639px) {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 150px;
+      margin: auto;
+    }
+  }
+}
+
+.information-2__box {
+  margin-bottom: 50px;
+  margin-top: auto;
+  align-self: flex-start;
+  @media (max-width: 479px) {
+	width: 100%;
+  }
+}

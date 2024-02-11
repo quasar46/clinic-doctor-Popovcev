@@ -1,0 +1,103 @@
+extends templates/layout
+
+block main 
+	main.results
+		.breadcrumbs._container 
+			a.breadcrumbs__link(href="") Главная
+			a.breadcrumbs__link.active Результаты лечения
+		section.mt0
+			._container
+				._container-2
+					h1.main-block__title.main-block__title--results Результаты лечения
+					.accordion#accordion-1
+						.accordion__item.accordion__item_show
+							h4.accordion__header Склеротерапия 
+							.accordion__body
+								.accordion__text
+									p Безоперационная методика лечения варикозной болезни.
+									p Внутрь вены вводится биологическое вещество, которое склеивает стенки сосуда и прекращает неправильный кровоток.
+						.accordion__item 
+							h4.accordion__header Эндовазальная лазерная коагуляция 
+							.accordion__body
+								.accordion__text
+									p Безоперационная методика лечения варикозной болезни.
+									p Внутрь вены вводится биологическое вещество, которое склеивает стенки сосуда и прекращает неправильный кровоток.
+						.accordion__item
+							h4.accordion__header Клеевая облитерация  
+							.accordion__body
+								.accordion__text
+									p Безоперационная методика лечения варикозной болезни.
+									p Внутрь вены вводится биологическое вещество, которое склеивает стенки сосуда и прекращает неправильный кровоток.
+						.accordion__item
+							h4.accordion__header Минифлебэктомия 
+							.accordion__body.clear-padding
+								.accordion__text
+									p Безоперационная методика лечения варикозной болезни.
+									p Внутрь вены вводится биологическое вещество, которое склеивает стенки сосуда и прекращает неправильный кровоток.
+								.tab#tab-1 
+									.tab-nav 
+										button.tab-btn.tab-btn-active(data-target-id="0") Все
+										button.tab-btn(data-target-id="1") Фото
+										button.tab-btn(data-target-id="2") Видео
+									.tab-content 
+										.tab-pane.tab-pane-show(data-id="0")
+											.swiper.slider-result#slider-result-1.-margin
+												.swiper-wrapper 
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+												.swiper-footer._container
+													.swiper-navigation
+														.swiper-button-prev
+															svg(width="80" height="80")
+																use(href="#icn-arrow-prev")
+														.swiper-button-next
+															svg(width="80" height="80")
+																use(href="#icn-arrow-next")
+													.swiper-pagination
+										.tab-pane(data-id="1")
+											.swiper.slider-result#slider-result-2.-margin
+												.swiper-wrapper 
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+												.swiper-footer._container
+													.swiper-navigation
+														.swiper-button-prev
+															svg(width="80" height="80")
+																use(href="#icn-arrow-prev")
+														.swiper-button-next
+															svg(width="80" height="80")
+																use(href="#icn-arrow-next")
+													.swiper-pagination
+										.tab-pane(data-id="2")
+											.swiper.slider-result#slider-result-3.-margin
+												.swiper-wrapper 
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+													.swiper-slide 
+														img(src="img/pic1.png" alt="")
+												.swiper-footer._container
+													.swiper-navigation
+														.swiper-button-prev
+															svg(width="80" height="80")
+																use(href="#icn-arrow-prev")
+														.swiper-button-next
+															svg(width="80" height="80")
+																use(href="#icn-arrow-next")
+													.swiper-pagination
+
+
+
+
+
+
+		include modules/feedback

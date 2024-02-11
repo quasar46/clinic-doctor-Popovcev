@@ -1,0 +1,44 @@
+extends templates/layout
+
+block main 
+    main
+        //- variables
+        - var mainBlockTitle = 'Клиника флебологии доктора Поповцева '
+        - var mainBlockSubtitle = 'Москва, Краснопролетарская 8, с1'
+        - var mainBlockText = 'Частная клиника флебологии privat practice в центре Москвы предлагает массу преимуществ для пациентов с проблемами сосудов. Наши врачи являются ведущими экспертами в своей области, а наше оснащение и технологии самые современные. Мы также предлагаем индивидуальный подход к каждому пациенту и гарантируем конфиденциальность. Посетите нас и получите лучшее лечение и заботу о ваших сосудах.'
+        
+        .breadcrumbs._container 
+            a.breadcrumbs__link(href="") Главная
+            a.breadcrumbs__link.active О клинике
+        include modules/main-block
+        //- include modules/slider4
+        section.slider.slider__office
+            ._container 
+                .swiper.slider-pic
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            img(src="img/slide1.png" alt="")
+                        .swiper-slide 
+                            img(src="img/slide1.png" alt="")
+                        .swiper-slide 
+                            img(src="img/slide1.png" alt="")
+                    .swiper-pagination
+                    .swiper-footer
+                        .swiper-navigation
+                            .swiper-button-prev
+                                svg(width="80" height="80")
+                                    use(href="#icn-arrow-prev")
+                            .swiper-button-next
+                                svg(width="80" height="80")
+                                    use(href="#icn-arrow-next")
+        include modules/grid-blocks
+        include modules/accordion
+        include modules/author
+        include modules/slider
+        include modules/feedback
+        include modules/slider7
+        include modules/reviews
+        include modules/slider2
+        include modules/accordion2
+        include modules/about-block
+        include modules/feedback2

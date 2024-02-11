@@ -1,0 +1,27 @@
+.tab-btn {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 30px;
+    @media (max-width: 767px) {
+      margin-right: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+}
+
+.tab-btn-active {
+  pointer-events: none;
+  color: #bdbdbd;
+}
+
+.tab-pane:not(.tab-pane-show) {
+  display: none;
+}

@@ -1,0 +1,38 @@
+extends templates/layout
+
+block main 
+    main
+        //- variables
+        //- - var mainBlockTitle = 'Поповцев Максим Александрович'
+        - var mainBlockSubtitle = 'Врач-хирург, флеболог'
+        - var mainBlockText = 'Использую все современные малоинвазивные методы лечения варикозной болезни: различиные виды склеротерапии, эндовазальную лазерную коагуляцию (ЭВЛК), радиочастотную абляцию (РЧА), минифлебэктомию.'
+
+        .breadcrumbs._container 
+            a.breadcrumbs__link(href="") Главная
+            a.breadcrumbs__link.active О докторе
+        section.main-block
+            ._container
+                ._container-inner 
+                    .col-left 
+                    .col-right
+                        h1.main-block__title Поповцев <br> Максим Александрович
+                        .main-block__content
+                            h3.main-block__sub-title #{mainBlockSubtitle}
+                            .main-block__text
+                                p #{mainBlockText}
+                            button.btn.btn--black.main-block__btn Записаться на консультацию
+        .picture._container
+            img(src="img/poster3.png", alt="")
+        include modules/slider3
+        include modules/directions
+        include modules/author
+        include modules/accordion
+        include modules/slider
+        include modules/feedback
+        include modules/reviews
+        include modules/slider7
+        include modules/companies
+        include modules/slider2
+        include modules/accordion2
+        include modules/about-block
+        include modules/feedback2

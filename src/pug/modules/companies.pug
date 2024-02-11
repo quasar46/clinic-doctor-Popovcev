@@ -1,0 +1,43 @@
+section.companies 
+	._container 
+		._container-inner 
+			.col-left 
+				h2.title-grey Членство в ассоциациях
+			.col-right 
+				//- .companies__wrapper 
+					//- .companies__item
+					//- 	img(src="img/comp1.svg" alt="")
+					//- 	p Ассоциация флебологов России
+					//- .companies__item
+					//- 	img(src="img/comp2.png" alt="")
+					//- 	p Российское общество хирургов
+					//- .companies__item
+					//- 	img(src="img/comp3.png" alt="")
+					//- 	p Российское общество колоректальных хирургов (РОКХ)
+					//- .companies__item
+					//- 	img(src="img/comp4.png" alt="")
+					//- 	p Российское общество ангиологов и сосудистых хирургов (РОАИСХ)
+
+				.swiper.slider-companies
+					.swiper-wrapper.companies__wrapper 
+						.swiper-slide.companies__item 
+							img(src="img/comp1.svg" alt="")
+							p Ассоциация флебологов России
+						.swiper-slide.companies__item 
+							img(src="img/comp2.png" alt="")
+							p Российское общество хирургов
+						.swiper-slide.companies__item 
+							img(src="img/comp3.png" alt="")
+							p Российское общество колоректальных хирургов (РОКХ)
+						.swiper-slide.companies__item 
+							img(src="img/comp4.png" alt="")
+							p Российское общество ангиологов и сосудистых хирургов (РОАИСХ)
+					.swiper-scrollbar
+					.swiper-footer._container
+						.swiper-navigation
+							.swiper-button-prev
+								svg(width="80" height="80")
+									use(href="#icn-arrow-prev")
+							.swiper-button-next
+								svg(width="80" height="80")
+									use(href="#icn-arrow-next")

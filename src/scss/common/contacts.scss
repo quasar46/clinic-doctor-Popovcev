@@ -1,0 +1,18 @@
+.contacts__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 30px;
+  }
+}
+
+.contacts__section {
+  margin-bottom: 150px;
+  @media (max-width: 767px) {
+    margin-bottom: 90px;
+  }
+}

@@ -1,0 +1,73 @@
+extends templates/layout
+
+block main 
+    main
+        //- variables
+        - var mainBlockTitle = 'Эндовазальная лазерная коагуляция (ЭВЛК/ЭВЛО)'
+        - var mainBlockSubtitle = 'Безоперационный метод удаления подкожных вен'
+        - var mainBlockText = 'Разрушение сосудистой стенки путем нагревания её лазером изнутри, что приводит к полному растворению вены за 6-12 месяцев.'
+
+        .breadcrumbs._container 
+            a.breadcrumbs__link(href="") Главная
+            a.breadcrumbs__link.active Эндовазальная лазерная коагуляция
+        include modules/main-block
+        figure.picture._container
+            img(src="img/pic6.png" alt="") 
+        section.combo 
+            ._container 
+                ._container-inner 
+                    .col-left 
+                        h2.title-grey Описание
+                    .col-right
+                        h3.combo__title «Золотой стандарт» лечения варикозной болезни вен ног
+                        .combo__text 
+                            p После удаления поврежденной вены лазером, прекращается обратный ток крови, кровообращение восстанавливается.
+                            p Синяки (гематомы), пигментация проходят в течение нескольких месяцев самостоятельно.
+                        .grid-blocks
+                            .grid-blocks__wrapper
+                                .grid-blocks__col
+                                    h4.grid-blocks__title Без наркоза
+                                    p Местная анестезия вокруг вены (тумесцентная анестезия). Не вызывает аллергии и не имеет противопоказаний для пациента. Может быть немного неприятна.
+                                .grid-blocks__col
+                                    h4.grid-blocks__title Без госпитализации
+                                    p Время нахождения в клинике не более 2-х часов. Сама процедура – около 40 минут. После процедуры привычный образ жизни с минимальными ограничениями.
+                                .grid-blocks__col
+                                    h4.grid-blocks__title Без разрезов и швов
+                                    p Требуется только один прокол кожи для введения лазерного световода внутрь вены. Нет ран. Не требуется уход за конечностью. На следующий день ногу можно мочить.
+                                .grid-blocks__col
+                                    h4.grid-blocks__title Без компрессионного трикотажа
+                                    p Умеренная болезненность в местах инъекций, которая легко купируется приемом нестероидных противовоспалительных препаратов (Ибупрофен).
+
+        include modules/slider5
+        include modules/accordion2
+        include modules/slider
+        section.price-block 
+            ._container 
+                ._container-inner 
+                    .col-left 
+                        h2.title-grey Цена
+                    .col-right 
+                        h3.price-block__title Стоимость процедуры
+                        .price-block__wrapper 
+                            h4.price-block__wrapper-title  Варикозная болезнь с поражением магистральной вены:
+                            ul.price-list 
+                                li 
+                                    .price-list__item
+                                        p На одной конечности
+                                        .price-list__new 59 850 ₽
+                                li 
+                                    .price-list__item
+                                        p На двух конечностях
+                                        .price-list__price 
+                                            span.price-list__old 100 800 ₽
+                                            span.price-list__new 100 800 ₽
+                            include modules/accordion-3
+
+
+
+
+        include modules/feedback
+        include modules/slider7
+        include modules/slider2
+        include modules/author
+        include modules/feedback2

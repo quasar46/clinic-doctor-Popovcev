@@ -1,0 +1,81 @@
+header.header
+	._container 
+		.header__wrapper
+			a.logo(href="index.html")
+				img(src="img/logo.svg" alt="логотип") 
+			.menu 
+				a.logo.logo--menu(href="")
+					img(src="img/logo.svg" alt="логотип") 
+				ul.menu__list
+					li.menu__item 
+						a.menu__link(href="about-doc.html") О докторе
+					li.menu__item 
+						a.menu__link
+							span Пациентам
+							svg.menu__arrow(width="13" height="8")
+								use(href="#icn-arrow-left2")
+						.submenu 
+							ul.submenu__wrap 
+								li.submenu__item 
+									a.submenu__link(href="about-doc.html") О докторе
+								li.submenu__item 
+									a.submenu__link(href="about.html") О клинике
+								li.submenu__item 
+									a.submenu__link(href="licenses.html") Лицензии
+								li.submenu__item 
+									a.submenu__link(href="answers.html") Ответы (FAQ)
+								li.submenu__item 
+									a.submenu__link(href="results.html") Результаты лечения
+					li.menu__item 
+						a.menu__link
+							span Заболевания
+							svg.menu__arrow(width="13" height="8")
+								use(href="#icn-arrow-left2")
+						.submenu 
+							ul.submenu__wrap 
+								li.submenu__item 
+									a.submenu__link(href="deseases.html") Варикозная болезнь
+								li.submenu__item 
+									a.submenu__link(href="deseases.html") Венозный тромбоз
+								li.submenu__item 
+									a.submenu__link(href="deseases.html") Косметическая флебология
+					li.menu__item 
+						a.menu__link
+							span Методы лечения
+							svg.menu__arrow(width="13" height="8")
+								use(href="#icn-arrow-left2")
+						.submenu 
+							ul.submenu__wrap 
+								li.submenu__item 
+									a.submenu__link(href="method.html") Консультация с УЗИ вен ног
+								li.submenu__item 
+									a.submenu__link(href="method.html") ЭВЛК
+								li.submenu__item 
+									a.submenu__link(href="method.html") Склеротерапия
+								li.submenu__item 
+									a.submenu__link(href="method.html") Минифлебэктомия
+								li.submenu__item 
+									a.submenu__link(href="method.html") Клеевая облитерация
+					li.menu__item 
+						a.menu__link(href="price.html") Цены
+					li.menu__item 
+						a.menu__link(href="contacts.html") Контакты
+				//- language
+				.lang-menu
+					include lang2
+				a.menu__agr 
+					span Политика конфиденциальности
+					span Обработка файлов Cookies
+				.social 
+					a.social__link(href="")
+						img(src="img/VKcom.png" alt="")
+					a.social__link(href="")
+						img(src="img/YouTube.png" alt="")
+					a.social__link(href="")
+						img(src="img/Instagram.png" alt="")
+					a.social__link(href="")
+						img(src="img/WhatsApp.png" alt="")
+			a.header__phone(href="tel:84950084883") 8 (495) 008 48 83
+			//- language
+			include lang
+			.burger 

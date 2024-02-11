@@ -1,0 +1,184 @@
+.footer {
+  background-color: #4f4f4f;
+  padding-top: 50px;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #bdbdbd;
+  @media (max-width: 999px) {
+    grid-template-columns: 184px 1fr;
+    gap: 0 40px;
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 0;
+  }
+}
+
+.footer__logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 144px;
+
+  &::after {
+    content: "Клиника флебологии доктора Поповцева";
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: calc(100% + 30px);
+    width: 260px;
+    @media (max-width: 999px) {
+      padding-left: 40px;
+      width: 144px;
+      top: calc(100% + 20px);
+    }
+    @media (max-width: 767px) {
+      position: relative;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (max-width: 767px) {
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer__col:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__col:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+  grid-template-areas:
+    "ga1 ga2 ga3"
+    "ga4 ga5 ga3";
+  align-items: flex-start;
+  .ga1 {
+    grid-area: ga1;
+    @media (max-width: 999px) {
+      order: 0;
+    }
+  }
+  .ga2 {
+    grid-area: ga2;
+    @media (max-width: 999px) {
+      order: 1;
+    }
+  }
+  .ga3 {
+    grid-area: ga3;
+    @media (max-width: 999px) {
+      order: 3;
+    }
+  }
+  .ga4 {
+    grid-area: ga4;
+    @media (max-width: 999px) {
+      order: 4;
+    }
+  }
+  .ga5 {
+    grid-area: ga5;
+    margin-top: -100px;
+    @media (max-width: 999px) {
+      margin-top: 0;
+      order: 2;
+    }
+  }
+  @media (max-width: 999px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  svg {
+    display: none;
+    &.rotate {
+      transform: rotate(-90deg);
+    }
+    @media (max-width: 999px) {
+      display: block;
+      --color-arrow: #fff;
+    }
+  }
+  @media (max-width: 999px) {
+    margin: 0;
+    padding: 15px 0;
+  }
+}
+
+.footer__link,
+.footer__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #bdbdbd;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__link {
+  text-decoration: underline;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 999px) {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 999px) {
+    display: none;
+    padding-bottom: 20px;
+  }
+  &.active {
+    display: flex;
+  }
+}
+
+.footer__requisites {
+  font-size: 12px;
+  font-weight: 400;
+  color: #bdbdbd;
+  text-align: right;
+  padding: 8px 0;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+}
+
+.footer__politics {
+  border-bottom: none;
+  padding-top: 30px;
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+}

@@ -1,0 +1,102 @@
+extends templates/layout
+
+block main 
+	main.licenses
+		.breadcrumbs._container 
+			a.breadcrumbs__link(href="") Главная
+			a.breadcrumbs__link.active Лицензии
+		section.mt0
+			._container
+				._container-2
+					h1.main-block__title.main-block__title--licenses Лицензии и сертификаты
+			.slider 
+				._container
+					._container-2
+						.slider__head
+							h3 Лицензии
+							p Документы, подтверждающие право на осуществление медицинской деятельности
+					._container-2
+						.swiper.slider-sertificat.-margin
+							.swiper-wrapper 
+								.swiper-slide 
+									img(src="img/pic15.png" alt="")
+									p Лицензия на осуществление медицинской деятельности
+								.swiper-slide 
+									img(src="img/pic16.png" alt="")
+									p Выписка из реестра лицензий
+								.swiper-slide 
+									img(src="img/pic17.png" alt="")
+									p Санитарно-эпидемиологическое заключение
+								.swiper-slide 
+									img(src="img/pic15.png" alt="")
+									p Санитарно-эпидемиологическое заключение
+								.swiper-slide 
+									img(src="img/pic16.png" alt="")
+									p Лицензия на осуществление медицинской деятельности
+								.swiper-slide 
+									img(src="img/pic17.png" alt="")
+									p Выписка из реестра лицензий
+								.swiper-slide 
+									img(src="img/pic15.png" alt="")
+									p Санитарно-эпидемиологическое заключение
+								.swiper-slide 
+									img(src="img/pic16.png" alt="")
+									p Санитарно-эпидемиологическое заключение
+							.swiper-scrollbar
+							.swiper-footer._container
+								.swiper-navigation
+									.swiper-button-prev
+										svg(width="80" height="80")
+											use(href="#icn-arrow-prev")
+									.swiper-button-next
+										svg(width="80" height="80")
+											use(href="#icn-arrow-next")
+
+		section.slider 
+			._container 
+				.slider__wrap._container-2 
+					.slider__head
+						h3 Сертификаты
+						p Каждые 5 лет подтверждаю сертификаты, обучаясь и сдавая экзамены.
+				._container-2
+					.swiper.slider-sertificat.-margin
+						.swiper-wrapper 
+							.swiper-slide 
+								img(src="img/pic2.png" alt="")
+								p Сертификат Ультразвуковая диагностика
+							.swiper-slide 
+								img(src="img/pic3.png" alt="")
+								p Сертификат Хирургия
+							.swiper-slide 
+								img(src="img/pic4.png" alt="")
+								p Сертификат Пластическая хирургия
+							.swiper-slide 
+								img(src="img/pic4.png" alt="")
+								p Сертификат Пластическая хирургия
+							.swiper-slide 
+								img(src="img/pic4.png" alt="")
+								p Сертификат Пластическая хирургия
+							.swiper-slide 
+								img(src="img/pic3.png" alt="")
+								p Сертификат Хирургия
+							.swiper-slide 
+								img(src="img/pic4.png" alt="")
+								p Сертификат Пластическая хирургия
+							.swiper-slide 
+								img(src="img/pic4.png" alt="")
+								p Сертификат Пластическая хирургия
+							.swiper-slide 
+								img(src="img/pic4.png" alt="")
+								p Сертификат Пластическая хирургия
+						.swiper-scrollbar
+						.swiper-footer._container
+							.swiper-navigation
+								.swiper-button-prev
+									svg(width="80" height="80")
+										use(href="#icn-arrow-prev")
+								.swiper-button-next
+									svg(width="80" height="80")
+										use(href="#icn-arrow-next")
+
+
+		include modules/feedback

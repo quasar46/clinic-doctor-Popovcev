@@ -1,0 +1,32 @@
+.companies__wrapper {
+  display: grid;
+  grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+  grid-template-rows: 335px 335px;
+  gap: 10px;
+  @media (max-width: 1160px) {
+    grid-template-rows: 320px 320px;
+  }
+  @media (max-width: 999px) {
+    grid-template-rows: 300px 300px;
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    gap: 0;
+  }
+}
+
+.companies__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  padding-inline: 60px;
+  @media (max-width: 767px) {
+    width: 300px;
+    height: 330px;
+  }
+}
